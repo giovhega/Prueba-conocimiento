@@ -1,21 +1,21 @@
 [
   {
-    "name": "Pagar nómina",
+    "name": "Pay payroll",
     "status": "Pending"
   },
 
   {
-    "name": "Pagar proveedores",
+    "name": "Pay vendor",
     "status": "Completed"
   },
 
   {
-    "name": "Generar reportes financieros",
+    "name": "Generate financial reports",
     "status": "Pending"
   },
 
   {
-    "name": "Generar copias de seguridad",
+    "name": "Generate backups",
     "status": "Pending"
   }
   

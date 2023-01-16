@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../project
+$ npm install
+$ ng serve
+```
+## new features in master branch
+The edit and trash functionalities are implemented to provide a better user experience in master branch.
