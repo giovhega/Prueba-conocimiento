@@ -1,0 +1,10 @@
+.task-div {
+    height: 600px;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .task-div {
+        height: 350px;
+    }
+}

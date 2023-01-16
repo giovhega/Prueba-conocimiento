@@ -1,0 +1,49 @@
+<section class="row p-1">
+
+    <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+
+        <h1>Lista General</h1>
+
+        <div class="col-12">
+            <app-filter-select
+                (eventFilterTask)="changeTitleFilter($event)"
+            ></app-filter-select>
+        </div>
+
+        <div class="col-12">
+        <app-add-task
+            (eventTask)="addTask($event)"
+        >
+        </app-add-task>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-6 mt-3" id="div-list">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-10 d-flex align-items-center justify-center">
+                    <h2 class="col-10 m-0">{{ filterTitle }}</h2>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-center">
+                    <span 
+                        *ngIf="tasksListDelete.length > 0"
+                        class="col-2 bi bi-trash" 
+                        role="button" 
+                        (click)="openTrash()"></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+    
+        <div class="col-12 task-div">
+            <app-chekc-list
+                [tasks]="tasksList"
+                (removeEvent)="confirmDialog($event)"
+                (editEvent)="editTask($event)"
+            >
+    
+            </app-chekc-list>
+        </div>
+    </div>
+
+</section>

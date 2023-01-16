@@ -1,0 +1,17 @@
+
+<div class="card rounded">
+    <div class="card-body">
+        <h5 class="card-title">Edit Task</h5>
+        <input 
+            type="text" 
+            class="form-control rounded-end" 
+            placeholder="agregar"
+            name="task"
+            [(ngModel)]="data.name"
+        >
+        <div class="col text-center mt-2">
+            <button class="btn btn-danger me-2" (click)="cancel()">Cancel</button>
+            <button class="btn btn-success" [mat-dialog-close]="data">Edit</button>            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div 
+  *ngFor="let task of tasks"
+  class="d-flex align-items-center justify-content-center bg-white p-2 m-2 rounded custom-shadow">
+    <div class="form-check">
+        <input 
+          class="form-check-input" 
+          type="checkbox" 
+          [checked]="task.status !== 'Pending' "
+          (change)="changeStatus($event, task)" 
+          id="flexCheckDefault">
+        <label 
+          [ngClass]="{'text-decoration-line-through': task.status === 'Completed', 'text-decoration-none': task.status === 'Pending'}"
+          class="form-check-label" for="flexCheckDefault">
+          {{ task.name }}
+        </label>
+    </div>
+    <i class="bi bi-x-lg text-danger me-2" role="button" (click)="removeTask(task)"></i>
+    <i class="bi bi-pencil text-success" role="button" (click)="editTask(task)"></i>
+</div>
+<p *ngIf="tasks.length === 0" class="text-center">now there are results.</p>

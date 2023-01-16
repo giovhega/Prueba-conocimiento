@@ -1,0 +1,35 @@
+
+<div class="card rounded">
+  <div class="card-body">
+    <h5 class="card-title">Trash</h5>
+    <table class="table table-responsive">
+      <thead class="table-light">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Restore</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of taskList; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ task.name }}</td>
+          <td>{{ task.status }}</td>
+          <td>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              (change)="changeInput(task)"
+              [id]="'resore_task_' + i"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="col text-center mt-2">
+      <button class="btn btn-danger me-2" (click)="cancel()">Cancel</button>
+      <button class="btn btn-success" (click)="edit()">Restore</button>
+    </div>
+  </div>
+</div>

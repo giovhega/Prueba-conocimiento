@@ -1,0 +1,8 @@
+<select 
+    class="form-select mb-1" 
+    aria-label="select filter"
+    (change)="eventFilter($event)"
+    >
+    <option value="null">To select</option>
+    <option [value]="filter" *ngFor="let filter of filterList"> {{ filter }}</option>
+</select>

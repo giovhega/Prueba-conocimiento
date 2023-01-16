@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Pagar nómina",
+    "status": "Pending"
+  },
+
+  {
+    "name": "Pagar proveedores",
+    "status": "Completed"
+  },
+
+  {
+    "name": "Generar reportes financieros",
+    "status": "Pending"
+  },
+
+  {
+    "name": "Generar copias de seguridad",
+    "status": "Pending"
+  }
+  
+]

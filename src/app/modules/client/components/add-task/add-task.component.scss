@@ -1,0 +1,10 @@
+div.input-group {
+    position: relative;
+
+    span {
+        position: absolute;
+        z-index: 1000;
+        right: 14px;
+        top: 8px;
+    }
+}

@@ -1,0 +1,12 @@
+<div class="input-group">
+    <input 
+        type="text" 
+        class="form-control rounded-end" 
+        placeholder="Add task"
+        name="task"
+        [formControl]="inputTask"
+
+        >
+    <span class="bi bi-plus-lg" role="button" (click)="addTask()"></span>
+</div>
+
