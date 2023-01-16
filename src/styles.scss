@@ -9,10 +9,9 @@ $theme-colors: (
   "danger": #D4386E,
   "success": #00E387,
   "component-active-bg": #00d2c4,
+  "input-placeholder-color": #366B6B 
 );
 
-$component-active-bg: #00d2c4;
-$input-placeholder-color: #366B6B;
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "../node_modules/bootstrap/scss/bootstrap";
 

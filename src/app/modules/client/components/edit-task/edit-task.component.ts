@@ -11,7 +11,7 @@ export class EditTaskComponent {
 
   constructor(
     public dialogRef: MatDialogRef<EditTaskComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Task
+    @Inject(MAT_DIALOG_DATA) public data: Task 
   ) {
     console.log('dialog**********', data.name);
   }

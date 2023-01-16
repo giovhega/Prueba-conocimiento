@@ -10,7 +10,7 @@ export class AlertService {
     private _snackBar: MatSnackBar
   ) { }
 
-  successfulMessage(message: string) {
+  public successfulMessage(message: string):void {
     let horizontalPosition: MatSnackBarHorizontalPosition = 'end';
     let verticalPosition: MatSnackBarVerticalPosition = 'top';
     this._snackBar.open(message, 'Splash', {
@@ -21,7 +21,7 @@ export class AlertService {
     });
   }
   
-  warningMessage(message: string){
+  public warningMessage(message: string):void{
     let horizontalPosition: MatSnackBarHorizontalPosition = 'end';
     let verticalPosition: MatSnackBarVerticalPosition = 'bottom';
     this._snackBar.open('Please enter a task.', 'Splash', {

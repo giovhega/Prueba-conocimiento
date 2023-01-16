@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { ClientManagerComponent } from './client-manager.component';
 
@@ -8,7 +9,7 @@ describe('ClientManagerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClientManagerComponent ]
+      declarations: [ ClientManagerComponent ],
     })
     .compileComponents();
 
@@ -17,7 +18,9 @@ describe('ClientManagerComponent', () => {
     fixture.detectChanges();
   });
 
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

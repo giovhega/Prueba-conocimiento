@@ -11,7 +11,7 @@ import { Task } from '../../interfaces/task.interface';
 })
 export class AddTaskComponent {
 
-  @Output() eventTask: EventEmitter<Task> = new EventEmitter();
+  @Output() eventTask = new EventEmitter<Task>();
   public inputTask: FormControl = new FormControl('');
 
   constructor(
